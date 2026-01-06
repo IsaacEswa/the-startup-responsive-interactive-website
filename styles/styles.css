@@ -27,7 +27,7 @@ header .whatsapp-icon {
 }
 
 .day-selector {
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
 }
 
@@ -35,4 +35,11 @@ header .whatsapp-icon {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
