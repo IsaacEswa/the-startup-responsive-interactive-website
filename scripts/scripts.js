@@ -13,16 +13,25 @@ function renderHTML(shows) {
     shows.forEach(item => {
         // create HTML string with string literal
         const html = `
-      <article>
-        <img src="https://fdnd-agency.directus.app/assets/${item.show.thumbnail}" width="200">
-        <h2>${item.show.name}</h2>
-        <p>${item.show.body}</p>
-        <time>${item.from}</time>
-        <time>${item.until}</time>
-      </article>
+        <article class="single-program">
+            <div class="program-thumbnail">
+                <img src="https://fdnd-agency.directus.app/assets/${item.show.thumbnail}" width="200">
+            </div>
+
+            <div class="program-info">
+                <h2 class="program-title">${item.show.name}</h2>
+                <p class="program-time">
+                    <time>${item.from}</time> - <time>${item.until}</time>
+                </p>
+            </div>
+        </article>
     `
+        // Get only hours and minutes, remove seconds
+        const from = item.from.slice(0, 5);
+        const until = item.until.slice(0, 5);
 
         // Insert at the end of the container after eachother
-        document.body.insertAdjacentHTML("beforeend", html)
+        // document.body.insertAdjacentHTML("beforeend", html)
+        document.querySelector(".programs").insertAdjacentHTML("beforeend", html)
     });
 }
