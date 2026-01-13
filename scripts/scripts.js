@@ -32,17 +32,3 @@ function renderHTML(shows) {
         document.querySelector(".programs").insertAdjacentHTML("beforeend", html)
     });
 }
-
-
-//datum van vandaag voor de datum picker
-const today = new Date()
-
-// select livetime element uit html
-const liveTime = document.querySelector(".live-time")
-
-// haal de huidige tijd op, (automatisch is dat in seconden sinds 1970)
-if (liveTime) {
-    const hours = today.getHours()
-    const minutes = today.getMinutes()
-    liveTime.style.setProperty('--time', `${hours}.${minutes}`)
-}

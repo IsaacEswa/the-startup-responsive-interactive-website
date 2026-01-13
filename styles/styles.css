@@ -1,14 +1,28 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url('../fonts/DMSans-VariableFont_wght.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'DM Sans', sans-serif;
 }
 
 :root {
     --black: #000000;
     --gray: #9C9C9C;
     --white: #FFFFFF;
+}
+
+h1,
+h2 {
+    font-size: clamp(1.625rem, 4vw, 2.25rem);
+}
+
+h3 {
+    font-size: clamp(1.375rem, 3vw, 1.75rem);
 }
 
 header {
@@ -71,7 +85,7 @@ header {
     padding: 1.5em;
     border-radius: 1em;
     width: 100%;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
     display: flex;
     gap: 1em;
 }
@@ -87,8 +101,22 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 0.5em;
+}
+
+.program-time {
+    display: flex;
+    gap: .5em;
+    align-items: center;
 }
 
 .program-time::before {
-    content: "🕒 ";
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url("/assets/clock-regular.svg");
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5em; */
 }
