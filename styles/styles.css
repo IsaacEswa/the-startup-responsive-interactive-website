@@ -120,3 +120,52 @@ header {
     background-repeat: no-repeat;
     margin-right: 0.5em; */
 }
+
+nav {
+    background-color: #43000B;
+    height: 70px;
+    position: sticky;
+    bottom: .7em;
+    margin-right: .7em;
+    margin-left: .7em;
+    border-radius: 10px;
+
+    z-index: 10;
+}
+
+.view-selector {
+    ul li {
+        display: inline;
+        text-align: center;
+    }
+
+    a {
+        display: inline-block;
+        width: 25%;
+        padding: .75rem 0;
+        margin: 0;
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .daily-view:hover~hr {
+        margin-left: 25%;
+    }
+
+    .weekly-view:hover~hr {
+        margin-left: 50%;
+    }
+
+    .all-view:hover~hr {
+        margin-left: 75%;
+    }
+
+    hr {
+        height: .25rem;
+        width: 25%;
+        margin: 0;
+        background-color: var(--black);
+        border: none;
+        transition: .3s ease-in-out;
+    }
+}

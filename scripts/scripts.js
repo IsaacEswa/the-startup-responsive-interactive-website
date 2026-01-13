@@ -29,6 +29,6 @@ function renderHTML(shows) {
 
         // Insert at the end of the container after eachother
         // document.body.insertAdjacentHTML("beforeend", html)
-        document.querySelector(".programs").insertAdjacentHTML("beforeend", html)
+        // document.querySelector(".programs").insertAdjacentHTML("beforeend", html)
     });
 }
