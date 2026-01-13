@@ -45,23 +45,25 @@ header {
 }
 
 .timeline-hours time {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 5em;
     height: 10em;
 }
 
 .timeline-hours time::after {
-    display: block;
-    height: 100%;
     content: "";
-    border-right: dashed 2px var(--gray);
-
+    flex-grow: 1;
+    border-right: 2px dashed var(--gray);
 }
+
 
 .programs {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .single-program {
@@ -70,4 +72,23 @@ header {
     border-radius: 1em;
     width: 100%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 1em;
+}
+
+.program-thumbnail img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 5em;
+    border-radius: 50%;
+}
+
+.program-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.program-time::before {
+    content: "🕒 ";
 }
