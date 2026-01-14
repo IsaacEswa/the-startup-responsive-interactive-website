@@ -169,3 +169,84 @@ nav {
         transition: .3s ease-in-out;
     }
 }
+
+/* INDEX2.HTML */
+.programs-view {
+    display: grid;
+    grid-template-columns: 4em 1fr 1fr 1fr;
+    grid-template-rows: repeat(24, 80px);
+    /* 1 uur = 80px */
+    /* grid-auto-flow: row; */
+    column-gap: .5em;
+    row-gap: .5em;
+}
+
+.schedule-timeline {
+    grid-column: 1;
+    position: sticky;
+    left: 0;
+    /* align-self: start; */
+    /* background: #fff; */
+    z-index: 10;
+    grid-row: 1 / -1;
+}
+
+.schedule-hours {
+    display: grid;
+    /* grid-auto-rows: 60px; */
+    grid-template-rows: repeat(24, 80px);
+}
+
+.schedule-hours time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5em;
+    height: 10em;
+}
+
+.schedule-hours time::after {
+    content: "";
+    flex-grow: 1;
+    border-right: 2px dashed var(--gray);
+}
+
+.single-program {
+    background-color: #D9D9D9;
+    padding: 1.5em;
+    border-radius: 1em;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+    display: flex;
+    gap: 1em;
+    grid-row: var(--row-start) / span var(--row-span);
+}
+
+.single-program.veronica {
+    grid-column: 2;
+}
+
+.single-program.slam {
+    grid-column: 3;
+}
+
+.single-program.honderdnl {
+    grid-column: 4;
+}
+
+/* Durations 
+.duration-1h {
+    grid-row-end: span 1;
+}
+
+.duration-2h {
+    grid-row-end: span 2;
+}
+
+.duration-3h {
+    grid-row-end: span 3;
+}
+
+.duration-4h {
+    grid-row-end: span 4;
+}*/
