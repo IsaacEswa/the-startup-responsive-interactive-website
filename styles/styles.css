@@ -206,7 +206,7 @@ nav {
     height: 10em;
 }
 
-.schedule-hours time::after {
+.schedule-hours time:not(:last-child)::after {
     content: "";
     flex-grow: 1;
     border-right: 2px dashed var(--gray);
