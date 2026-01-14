@@ -14,6 +14,9 @@
     --black: #000000;
     --gray: #9C9C9C;
     --white: #FFFFFF;
+    --veronica: #0D8DCC;
+    --slam: #E40069;
+    --honderdnl: #EF7D00;
 }
 
 h1,
@@ -117,10 +120,8 @@ header {
     width: 1em;
     height: 1em;
     background-image: url("/assets/clock-regular.svg");
-    /* background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 0.5em; */
 }
+
 
 nav {
     background-color: #43000B;
@@ -213,7 +214,7 @@ nav {
 }
 
 .single-program {
-    background-color: #D9D9D9;
+    color: var(--white);
     padding: 1.5em;
     border-radius: 1em;
     width: 100%;
@@ -226,14 +227,17 @@ nav {
 
 .single-program.veronica {
     grid-column: 2;
+    background-color: var(--veronica);
 }
 
 .single-program.slam {
     grid-column: 3;
+    background-color: var(--slam);
 }
 
 .single-program.honderdnl {
     grid-column: 4;
+    background-color: var(--honderdnl);
 }
 
 /* Durations 
