@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url('../fonts/DMSans-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --black: #000000;
+    --gray: #9C9C9C;
+    --white: #FFFFFF;
+    --veronica: #0D8DCC;
+    --slam: #E40069;
+    --honderdnl: #EF7D00;
+}
+
+body {
+    background-color: #FAFAFA;
+    line-height: 1.5;
+}
+
+
+
+h1 {
+    font-size: clamp(1.375rem, 4vw, 2.25rem);
+    /* 22 → 36 */
+}
+
+h2 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    /* 20 → 28 */
+    white-space: nowrap;
+}
+
+h3 {
+    font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+    /* 18 → 22 */
+}
+
+p {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    /* 16 → 18 */
+}

@@ -1,35 +1,4 @@
-@font-face {
-    font-family: "DM Sans";
-    src: url('../fonts/DMSans-VariableFont_wght.ttf') format('truetype');
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'DM Sans', sans-serif;
-}
-
-:root {
-    --black: #000000;
-    --gray: #9C9C9C;
-    --white: #FFFFFF;
-    --veronica: #0D8DCC;
-    --slam: #E40069;
-    --honderdnl: #EF7D00;
-}
-
-h1,
-h2 {
-    font-size: clamp(1.625rem, 4vw, 2.25rem);
-}
-
-h3 {
-    font-size: clamp(1.375rem, 3vw, 1.75rem);
-}
-
 header {
-    /* background-color: var(--gray); */
     width: 100%;
     height: 70px;
     display: flex;
@@ -38,10 +7,10 @@ header {
     flex-direction: row;
 }
 
+
 .day-selector {
     justify-content: space-between;
     display: flex;
-
 }
 
 .day-selector .select-day {
@@ -50,19 +19,23 @@ header {
     align-items: center;
 }
 
-.radio-buttons {
+.select-radio[data-category="veronica"] {
+    display: none;
+}
+
+/* .radio-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-}
-
+} */
+/* 
 .program-list {
     display: flex;
     flex-direction: row;
-}
+} */
 
-.timeline-hours time {
+/* .timeline-hours time {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,10 +55,9 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-}
+} */
 
-.single-program {
-    background-color: #D9D9D9;
+/* .single-program {
     padding: 1.5em;
     border-radius: 1em;
     width: 100%;
@@ -93,7 +65,7 @@ header {
     display: flex;
     gap: 1em;
     align-items: center;
-}
+} */
 
 .program-thumbnail img {
     aspect-ratio: 1/1;
@@ -124,7 +96,7 @@ header {
 }
 
 
-nav {
+/* nav {
     background-color: #43000B;
     height: 70px;
     position: sticky;
@@ -134,9 +106,9 @@ nav {
     border-radius: 10px;
 
     z-index: 10;
-}
+} */
 
-.view-selector {
+/* .view-selector {
     ul li {
         display: inline;
         text-align: center;
@@ -171,25 +143,20 @@ nav {
         border: none;
         transition: .3s ease-in-out;
     }
-}
+} */
 
-/* INDEX2.HTML */
 .programs-view {
     display: grid;
     grid-template-columns: 4em 1fr 1fr 1fr;
     grid-template-rows: repeat(24, 80px);
     /* 1 uur = 80px */
-    /* grid-auto-flow: row; */
     column-gap: .5em;
-    /* row-gap: .5em; */
 }
 
 .schedule-timeline {
     grid-column: 1;
     position: sticky;
     left: 0;
-    /* align-self: start; */
-    /* background: #fff; */
     z-index: 10;
     grid-row: 1 / -1;
 }
@@ -204,8 +171,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 5em;
-    height: 10em;
+    /* width: 5em; */
+    /* height: 80px; */
 }
 
 .schedule-hours time:not(:last-child)::after {
@@ -224,6 +191,7 @@ nav {
     gap: 1em;
     grid-row: var(--row-start) / span var(--row-span);
     margin: 0.3em;
+    align-items: center;
 }
 
 .single-program.veronica {
@@ -247,5 +215,4 @@ nav {
     background-color: var(--black);
     position: absolute;
     top: calc((var(--hours) + var(--minutes) / 60) / 24 * 100%);
-    z-index: 10;
 }

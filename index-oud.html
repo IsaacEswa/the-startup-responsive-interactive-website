@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioGuide</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/radioguide-logo-colored.svg" alt="RadioGuide logo" class="header-logo">
+    </header>
+
+    <main>
+        <!-- <h1>Een overzicht van jouw favoriete zenders</h1> -->
+
+        <section class="day-selector">
+            <div class="select-day">
+                <p>Ma</p>
+                <p><strong>05</strong></p>
+            </div>
+            <div class="select-day">
+                <p>Di</p>
+                <p><strong>06</strong></p>
+            </div>
+            <div class="select-day">
+                <p>Wo</p>
+                <p><strong>07</strong></p>
+            </div>
+            <div class="select-day">
+                <p>Do</p>
+                <p><strong>08</strong></p>
+            </div>
+            <div class="select-day">
+                <p>Vr</p>
+                <p><strong>09</strong></p>
+            </div>
+            <div class="select-day">
+                <p>Za</p>
+                <p><strong>10</strong></p>
+            </div>
+            <div class="select-day">
+                <p>Zo</p>
+                <p><strong>11</strong></p>
+            </div>
+        </section>
+
+        <section class="radio-selector">
+            <h2>Selecteer zender</h2>
+
+            <div class="radio-buttons">
+                <button class="select-radio" data-category="veronica">
+                    <img src="assets/veronica-logo.jpg" alt="Radio Veronica">
+                </button>
+
+                <button class="select-radio" data-category="slam">
+                    <img src="assets/slam-logo.jpg" alt="SLAM!">
+                </button>
+
+                <button class="select-radio" data-category="100nl">
+                    <img src="assets/100nl-logo.jpg" alt="100% NL">
+                </button>
+            </div>
+        </section>
+
+
+        <section class="program-list">
+            <div class="timeline">
+                <div class="live-time"></div>
+                <div class="timeline-hours">
+                    <time datetime="">00:00</time>
+                    <time datetime="">02:00</time>
+                    <time datetime="">03:00</time>
+                    <time datetime="">04:00</time>
+                    <time datetime="">05:00</time>
+                    <time datetime="">06:00</time>
+                    <time datetime="">07:00</time>
+                    <time datetime="">08:00</time>
+                    <time datetime="">09:00</time>
+                    <time datetime="">10:00</time>
+                    <time datetime="">11:00</time>
+                    <time datetime="">12:00</time>
+                    <time datetime="">13:00</time>
+                    <time datetime="">14:00</time>
+                    <time datetime="">15:00</time>
+                    <time datetime="">16:00</time>
+                    <time datetime="">17:00</time>
+                    <time datetime="">18:00</time>
+                    <time datetime="">19:00</time>
+                    <time datetime="">20:00</time>
+                    <time datetime="">21:00</time>
+                    <time datetime="">22:00</time>
+                    <time datetime="">23:00</time>
+                </div>
+            </div>
+            <div class="programs"></div>
+        </section>
+
+        <!-- <nav>
+            <a href="#">Per dag</a>
+            <a href="#">Per week</a>
+            <a href="#">Alles bekijken</a>
+        </nav> -->
+        <div class="view-selector">
+            <ul>
+                <li class="daily-view"><a href="#">Per dag</a></li>
+                <li class="weekly-view"><a href="#">Per week</a></li>
+                <li class="all-view"><a href="#">Alles bekijken</a></li>
+                <hr />
+            </ul>
+        </div>
+    </main>
+
+
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

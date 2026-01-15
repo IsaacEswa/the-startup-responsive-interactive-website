@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RadioGuide</title>
 
+    <link rel="stylesheet" href="styles/styleguide.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -66,12 +67,12 @@
             </div>
         </section>
 
-
-        <section class="program-list">
-            <div class="timeline">
+        <section class="programs-view">
+            <div class="schedule-timeline">
                 <div class="live-time"></div>
-                <div class="timeline-hours">
+                <div class="schedule-hours">
                     <time datetime="">00:00</time>
+                    <time datetime="">01:00</time>
                     <time datetime="">02:00</time>
                     <time datetime="">03:00</time>
                     <time datetime="">04:00</time>
@@ -94,24 +95,276 @@
                     <time datetime="">21:00</time>
                     <time datetime="">22:00</time>
                     <time datetime="">23:00</time>
+                    <time datetime="">23:59</time>
+
                 </div>
             </div>
-            <div class="programs"></div>
+            <!-- Begin Veronica programma's -->
+            <article class="single-program veronica" style="--row-start: 1; --row-span: 4;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Oh wat een nacht</h2>
+                    <p class="program-time">
+                        <time>00:00</time> - <time>04:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program veronica" style="--row-start: 7; --row-span: 4;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Ekdom in de morgen</h2>
+                    <p class="program-time">
+                        <time>06:00</time> - <time>10:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program veronica" style="--row-start: 11; --row-span: 2;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Goud van oud</h2>
+                    <p class="program-time">
+                        <time>10:00</time> - <time>12:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program veronica" style="--row-start: 15; --row-span: 2;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">De Bonanza</h2>
+                    <p class="program-time">
+                        <time>14:00</time> - <time>16:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program veronica" style="--row-start: 17; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Wout & Frank</h2>
+                    <p class="program-time">
+                        <time>16:00</time> - <time>19:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program veronica" style="--row-start: 20; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Ferry Oomen</h2>
+                    <p class="program-time">
+                        <time>19:00</time> - <time>22:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program veronica" style="--row-start: 23; --row-span: 2;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Ferry Oomen</h2>
+                    <p class="program-time">
+                        <time>22:00</time> - <time>23:59</time>
+                    </p>
+                </div>
+            </article>
+            <!-- Einde Veronica programma's -->
+
+            <!-- Begin Slam programma's -->
+            <article class="single-program slam" style="--row-start: 1; --row-span: 6;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">SLAM! Non-stop</h2>
+                    <p class="program-time">
+                        <time>00:00</time> - <time>06:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program slam" style="--row-start: 7; --row-span: 1;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Florian Hamelink</h2>
+                    <p class="program-time">
+                        <time>06:00</time> - <time>07:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program slam" style="--row-start: 8; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">DeSLAM! Ochtendshow</h2>
+                    <p class="program-time">
+                        <time>07:00</time> - <time>10:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program slam" style="--row-start: 11; --row-span: 2;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Jarno van der Wielen</h2>
+                    <p class="program-time">
+                        <time>10:00</time> - <time>12:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program slam" style="--row-start: 13; --row-span: 2;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">SLAM! Housuh in de pauzuh</h2>
+                    <p class="program-time">
+                        <time>12:00</time> - <time>14:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program slam" style="--row-start: 15; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Thomas van Empelen</h2>
+                    <p class="program-time">
+                        <time>14:00</time> - <time>17:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program slam" style="--row-start: 18; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">SLAM! Middagshow</h2>
+                    <p class="program-time">
+                        <time>17:00</time> - <time>20:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program slam" style="--row-start: 21; --row-span: 4;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">SLAM! Non-stop</h2>
+                    <p class="program-time">
+                        <time>20:00</time> - <time>23:59</time>
+                    </p>
+                </div>
+            </article>
+            <!-- Einde Slam programma's -->
+
+            <!-- Begin 100%NL programma's -->
+            <article class="single-program honderdnl" style="--row-start: 1; --row-span: 6;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">100%NL Non-stop</h2>
+                    <p class="program-time">
+                        <time>00:00</time> - <time>06:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program honderdnl" style="--row-start: 7; --row-span: 4;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Giorgio & Ingrid</h2>
+                    <p class="program-time">
+                        <time>06:00</time> - <time>10:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program honderdnl" style="--row-start: 7; --row-span: 4;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Giorgio & Ingrid</h2>
+                    <p class="program-time">
+                        <time>06:00</time> - <time>10:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program honderdnl" style="--row-start: 11; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Erik van Roekel</h2>
+                    <p class="program-time">
+                        <time>10:00</time> - <time>13:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program honderdnl" style="--row-start: 14; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Colin Banks</h2>
+                    <p class="program-time">
+                        <time>13:00</time> - <time>16:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program honderdnl" style="--row-start: 17; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Somertijd</h2>
+                    <p class="program-time">
+                        <time>16:00</time> - <time>19:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program honderdnl" style="--row-start: 20; --row-span: 3;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">Koen Hansen</h2>
+                    <p class="program-time">
+                        <time>19:00</time> - <time>22:00</time>
+                    </p>
+                </div>
+            </article>
+            <article class="single-program honderdnl" style="--row-start: 23; --row-span: 2;">
+                <div class="program-thumbnail">
+                    <img src="assets/de-bonanza.jpg.avif" width="200">
+                </div>
+                <div class="program-info">
+                    <h2 class="program-title">100%NL Non-stop</h2>
+                    <p class="program-time">
+                        <time>22:00</time> - <time>23:59</time>
+                    </p>
+                </div>
+            </article>
+            <!-- Einde 100%NL programma's -->
+
         </section>
 
-        <!-- <nav>
-            <a href="#">Per dag</a>
-            <a href="#">Per week</a>
-            <a href="#">Alles bekijken</a>
-        </nav> -->
-        <div class="view-selector">
-            <ul>
-                <li class="daily-view"><a href="#">Per dag</a></li>
-                <li class="weekly-view"><a href="#">Per week</a></li>
-                <li class="all-view"><a href="#">Alles bekijken</a></li>
-                <hr />
-            </ul>
-        </div>
+
+
     </main>
 
 
