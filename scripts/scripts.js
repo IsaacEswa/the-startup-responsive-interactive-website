@@ -1,39 +1,3 @@
-// // API endpoint returning JSON 
-// const url = 'https://fdnd-agency.directus.app/items/mh_shows?fields=*,show.*'
-
-// // fetch JSON data
-// fetch(url).then(response => response.json())
-//     .then(data => renderHTML(data.data))
-//     .catch(err => console.error(err))
-
-// // render shows to HTML
-// function renderHTML(shows) {
-
-//     // loop through all shows
-//     shows.forEach(item => {
-//         // create HTML string with string literal
-//         const html = `
-//         <article class="single-program">
-//             <div class="program-thumbnail">
-//                 <img src="https://fdnd-agency.directus.app/assets/${item.show.thumbnail}" width="200">
-//             </div>
-
-//             <div class="program-info">
-//                 <h2 class="program-title">${item.show.name}</h2>
-//                 <p class="program-time">
-//                     <time>${item.from}</time> - <time>${item.until}</time>
-//                 </p>
-//             </div>
-//         </article>
-//     `
-
-// Insert at the end of the container after eachother
-// document.body.insertAdjacentHTML("beforeend", html)
-// document.querySelector(".programs").insertAdjacentHTML("beforeend", html)
-//     });
-// }
-
-
 // haal live tijd/datum op
 let live = new Date();
 
@@ -48,4 +12,20 @@ let minutes = live.getMinutes()
 if (liveTime) {
     liveTime.style.setProperty('--hours', `${hours}`)
     liveTime.style.setProperty('--minutes', `${minutes}`)
+}
+
+
+
+
+// Stap 1: selecteer Veronica radio button
+let veronicaRadioButton = document.querySelector('.veronica-button');
+// selecteer alle programma's met data-category "veronica"
+let veronicaPrograms = document.querySelectorAll('.veronica');
+
+// Stap 2: voeg click event listener toe aan de button met een callback functie
+veronicaRadioButton.addEventListener('click', hidePrograms)
+
+// Stap 3: definieer de callback functie
+function hidePrograms() {
+    veronicaPrograms.classList.toggle('hide-radio');
 }

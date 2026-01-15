@@ -19,7 +19,15 @@ header {
     align-items: center;
 }
 
-.select-radio[data-category="veronica"] {
+/* .select-radio[data-category="veronica"] {
+    display: none;
+} */
+
+.hide-radio {
+    display: none;
+}
+
+.veronica {
     display: none;
 }
 
