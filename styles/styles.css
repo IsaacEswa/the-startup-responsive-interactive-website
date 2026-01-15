@@ -19,22 +19,28 @@ header {
     align-items: center;
 }
 
-/* .select-radio[data-category="veronica"] {
-    display: none;
-} */
+.select-radio {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+
+    img {
+        width: 10em;
+        border-radius: 10px;
+    }
+}
+
+.select-radio:active {
+    scale: .95;
+}
 
 .hide-programs {
     opacity: 0;
-    transition: opacity .3s ease-out;
 }
 
-/* article.veronica {
-    visibility: hidden;
-} */
-
 .active-radiobutton {
-    transition: opacity .3s ease-out;
-    opacity: .7;
+    opacity: .5;
 }
 
 .radio-selector {
@@ -208,10 +214,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #FAFAFA; */
-
-    color: black;
-    mix-blend-mode: difference;
+    background-color: #FAFAFA;
 
 
     /* width: 5em; */
