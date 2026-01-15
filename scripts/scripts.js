@@ -20,7 +20,7 @@ if (liveTime) {
 // Stap 1: selecteer Veronica radio button
 let veronicaRadioButton = document.querySelector('.veronica-button');
 // selecteer alle programma's met data-category "veronica"
-let veronicaPrograms = document.querySelectorAll('.veronica');
+let veronicaPrograms = document.querySelectorAll('article.veronica');
 
 // Stap 2: voeg click event listener toe aan de button met een callback functie
 veronicaRadioButton.addEventListener('click', hidePrograms)
@@ -29,3 +29,6 @@ veronicaRadioButton.addEventListener('click', hidePrograms)
 function hidePrograms() {
     veronicaPrograms.classList.toggle('hide-radio');
 }
+
+console.log(veronicaRadioButton);
+console.log(veronicaPrograms);
