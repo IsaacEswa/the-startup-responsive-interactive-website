@@ -23,13 +23,19 @@ header {
     display: none;
 } */
 
-.hide-radio {
-    display: none;
+.hide-programs {
+    opacity: 0;
+    transition: opacity .3s ease-out;
 }
 
 /* article.veronica {
-    display: none;
+    visibility: hidden;
 } */
+
+.active-radiobutton {
+    transition: opacity .3s ease-out;
+    opacity: .7;
+}
 
 /* .radio-buttons {
     display: flex;

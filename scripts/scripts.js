@@ -27,8 +27,9 @@ veronicaRadioButton.addEventListener('click', hidePrograms)
 
 // Stap 3: definieer de callback functie
 function hidePrograms() {
-    veronicaPrograms.classList.toggle('hide-radio');
-}
+    veronicaPrograms.forEach(article => {
+        article.classList.toggle('hide-programs');
+    });
 
-console.log(veronicaRadioButton);
-console.log(veronicaPrograms);
+    veronicaRadioButton.classList.toggle('active-radiobutton');
+}
