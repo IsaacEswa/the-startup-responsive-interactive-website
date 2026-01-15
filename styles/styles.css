@@ -37,12 +37,25 @@ header {
     opacity: .7;
 }
 
-/* .radio-buttons {
+.radio-selector {
+    display: flex;
+    justify-content: center;
+}
+
+.radio-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-} */
+    width: 95%;
+    position: fixed;
+    bottom: .5em;
+    background-color: var(--primary-color);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 99;
+}
+
 /* 
 .program-list {
     display: flex;
@@ -165,6 +178,7 @@ header {
     grid-template-rows: repeat(24, 80px);
     /* 1 uur = 80px */
     column-gap: .5em;
+    margin-bottom: 120px;
 }
 
 .schedule-timeline {
@@ -175,16 +189,31 @@ header {
     grid-row: 1 / -1;
 }
 
+
 .schedule-hours {
     display: grid;
     /* grid-auto-rows: 60px; */
     grid-template-rows: repeat(24, 80px);
+
+    .first-hour {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .last-hour {
+        border-radius: 0 0 10px 10px;
+    }
 }
 
 .schedule-hours time {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: #FAFAFA; */
+
+    color: black;
+    mix-blend-mode: difference;
+
+
     /* width: 5em; */
     /* height: 80px; */
 }
