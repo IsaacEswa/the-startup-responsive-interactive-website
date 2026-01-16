@@ -23,6 +23,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
+    transition: .3s;
 
 
     img {
@@ -31,12 +32,17 @@ header {
     }
 }
 
+.select-radio:hover {
+    scale: 1.05;
+}
+
 .select-radio:active {
     scale: .95;
 }
 
 .hide-programs {
-    opacity: 0;
+    opacity: 0 !important;
+
 }
 
 .active-radiobutton {
@@ -238,6 +244,8 @@ header {
     grid-row: var(--row-start) / span var(--row-span);
     margin: 0.3em;
     align-items: center;
+    transition: .3s;
+
 }
 
 .single-program.veronica {
