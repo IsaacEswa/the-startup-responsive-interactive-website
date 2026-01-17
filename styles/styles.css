@@ -298,7 +298,8 @@ header {
     grid-template-rows: repeat(24, 80px);
     /* 1 uur = 80px */
     column-gap: .5em;
-    margin-bottom: 120px;
+    margin-bottom: 200px;
+
 }
 
 .schedule-timeline {
@@ -352,8 +353,11 @@ header {
     grid-row: var(--row-start) / span var(--row-span);
     margin: 0.3em;
     align-items: center;
-    transition: .3s;
+    /* transition: .3s; */
 
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .single-program.veronica {
