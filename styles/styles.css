@@ -381,4 +381,5 @@ header {
     background-color: var(--black);
     position: absolute;
     top: calc((var(--hours) + var(--minutes) / 60) / 24 * 100%);
+    margin-top: 1em;
 }

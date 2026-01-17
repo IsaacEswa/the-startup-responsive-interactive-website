@@ -8,12 +8,16 @@ let liveTime = document.querySelector(".live-time")
 let hours = live.getHours()
 let minutes = live.getMinutes()
 
+console.log(minutes)
+console.log(hours)
+
 // zet de tijd als CSS variabelen
 if (liveTime) {
     liveTime.style.setProperty('--hours', `${hours}`)
     liveTime.style.setProperty('--minutes', `${minutes}`)
 }
 
+liveTime?.scrollIntoView({ behavior: "smooth", block: "center" });
 
 
 
