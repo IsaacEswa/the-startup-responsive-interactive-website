@@ -18,6 +18,9 @@
     --slam: #E40069;
     --honderdnl: #EF7D00;
     --primary-color: #43000B;
+
+    --paddingsidesMobile: 0 15px;
+    --paddingsidesTablet: 0 50px;
 }
 
 body {
@@ -47,8 +50,15 @@ p {
 }
 
 section {
-    margin-left: 1em;
-    margin-right: 1em;
+    /* margin-left: 1em;
+    margin-right: 1em; */
+
+    padding: var(--paddingsidesMobile);
+    margin-top: 10px;
+
+    @media (min-width: 768px) {
+        padding: var(--paddingsidesTablet);
+    }
 }
 
 .auto-show {
@@ -65,5 +75,21 @@ section {
     to {
         opacity: 1;
 
+    }
+}
+
+.hideondesktop {
+    display: block;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.hideonmobile {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
     }
 }

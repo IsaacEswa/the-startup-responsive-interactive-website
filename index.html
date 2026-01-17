@@ -11,40 +11,48 @@
 </head>
 
 <body>
+
     <header>
-        <!-- het menu -->
-        <nav>
-            <!-- de button is niet relevant voor screenreaders -->
-            <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
-            <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg"
-                    alt="" />Menu</button>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
+        <!-- logo's -->
+        <div class="header-leftside">
+            <a href="./index.html">
+                <img class="logo-primair" src="assets/radioguide-logo-colored.svg" alt="RadioGuide">
+            </a>
+        </div>
+        <div class="header-rightside">
+            <nav class="menu">
 
-            </ul>
-        </nav>
+                <!-- Menu voor mobiel -->
+                <div class="sidebar" id="sidebar" aria-hidden="true" tabindex="-1">
+                    <button id="close-icon" onclick=hideSidebar() title="Sluit menu"><svg height="30"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
+                        </svg></button>
 
-        <!-- het logo -->
-        <a href="#">
-            <img src="assets/radioguide-logo-colored.svg" alt="RadioGuide logo" class="header-logo">
-        </a>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Pagina 2</a></li>
+                    </ul>
+                </div>
+                <!-- Menu voor desktop -->
+                <ul class="navigation">
+                    <!-- <li><a href="./index.html">Home</a></li> -->
+                    <li><a href="#">Pagina 2</a></li>
+                </ul>
 
-        <button>
-            <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M2.91669 12.25C2.91669 6.77318 7.35654 2.33333 12.8333 2.33333C18.3101 2.33333 22.75 6.77318 22.75 12.25C22.75 17.7268 18.3101 22.1667 12.8333 22.1667C10.8824 22.1667 9.06648 21.6046 7.53431 20.6338C7.24917 20.4532 6.89976 20.4049 6.57631 20.5014L3.21731 21.5039L4.48202 18.5445C4.63151 18.1947 4.60109 17.7941 4.40052 17.4709C3.45999 15.9553 2.91669 14.1679 2.91669 12.25ZM12.8333 0C6.06787 0 0.583358 5.48451 0.583358 12.25C0.583358 14.3944 1.13536 16.413 2.10543 18.1681L0.0938834 22.8748C-0.0839423 23.291 -0.00512 23.7724 0.296125 24.11C0.59737 24.4477 1.06671 24.5807 1.50032 24.4512L6.74965 22.8847C8.54286 23.9126 10.621 24.5 12.8333 24.5C19.5988 24.5 25.0833 19.0155 25.0833 12.25C25.0833 5.48451 19.5988 0 12.8333 0ZM15.5079 14.7961L13.9747 15.8761C13.2566 15.4671 12.4627 14.8961 11.6663 14.0997C10.8385 13.2719 10.2247 12.4172 9.77214 11.6332L10.7465 10.8061C11.1647 10.4512 11.2791 9.85289 11.0215 9.36866L9.77998 7.03533C9.6128 6.72113 9.31136 6.50043 8.96134 6.43596C8.61132 6.3715 8.25103 6.47033 7.98288 6.70435L7.61479 7.02561C6.7296 7.79816 6.20608 9.06768 6.63998 10.3531C7.08981 11.6857 8.0498 13.783 10.0164 15.7496C12.1323 17.8655 14.2815 18.6987 15.5384 19.0224C16.551 19.283 17.5093 18.9336 18.1846 18.3834L18.8747 17.8211C19.1699 17.5806 19.3291 17.2111 19.3013 16.8314C19.2735 16.4516 19.0621 16.1093 18.7349 15.9144L16.7769 14.7477C16.3814 14.5122 15.8844 14.5311 15.5079 14.7961Z"
-                    fill="white" />
-            </svg>
-            <span>App studio</span>
-        </button>
-
+                <button id="hamburger-icon" onclick=showSidebar() title="Open menu"><svg height="30"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                    </svg></button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- <h1>Een overzicht van jouw favoriete zenders</h1> -->
-
         <section class="day-selector">
             <div class="select-day active-day">
                 <p>Ma</p>
@@ -375,14 +383,11 @@
                 </div>
             </article>
             <!-- Einde 100%NL programma's -->
-
         </section>
-
-
 
     </main>
 
-
+    <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 

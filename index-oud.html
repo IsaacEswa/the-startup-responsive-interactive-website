@@ -11,7 +11,23 @@
 
 <body>
     <header>
-        <img src="assets/radioguide-logo-colored.svg" alt="RadioGuide logo" class="header-logo">
+        <!-- het logo -->
+        <a href="#">
+            <img src="assets/radioguide-logo-colored.svg" alt="RadioGuide logo" class="header-logo">
+        </a>
+
+        <!-- het menu -->
+        <nav>
+            <!-- de button is niet relevant voor screenreaders -->
+            <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+            <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg"
+                    alt="" />Menu</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
