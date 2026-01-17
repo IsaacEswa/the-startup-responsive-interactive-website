@@ -154,22 +154,25 @@ header {
 }
 
 .radio-selector {
-    display: flex;
-    justify-content: center;
+    background-color: var(--primary-color);
+    position: fixed;
+    bottom: .5em;
+    left: .5em;
+    right: .5em;
+    padding: 1em;
+    border-radius: 10px;
+    z-index: 99;
+
+    h2 {
+        color: var(--white);
+        padding-bottom: .5em;
+    }
 }
 
 .radio-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 95%;
-    position: fixed;
-    bottom: .5em;
-    background-color: var(--primary-color);
-    padding: 1em;
-    border-radius: 10px;
-    text-align: center;
-    z-index: 99;
 }
 
 /* 
