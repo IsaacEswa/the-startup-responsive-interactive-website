@@ -15,9 +15,10 @@
     <header>
         <!-- logo's -->
         <div class="header-leftside">
-            <a href="./index.html">
+            <!-- <a href="./index.html">
                 <img class="logo-primair" src="assets/radioguide-logo-colored.svg" alt="RadioGuide">
-            </a>
+            </a> -->
+            <h1><a href="./index.html">RadioGuide</a></h1>
         </div>
         <div class="header-rightside">
             <nav class="menu">
@@ -86,6 +87,26 @@
             </div>
         </section>
 
+        <section class="radio-selector">
+            <div class="radio-container">
+                <h2>Filter zender</h2>
+                <div class="radio-buttons">
+                    <button class="select-radio veronica-button">
+                        <img src="assets/veronica-logo.png" alt="Radio Veronica">
+                    </button>
+
+                    <button class="select-radio slam-button">
+                        <img src="assets/slam-logo.png" alt="SLAM!">
+                    </button>
+
+                    <button class="select-radio honderdnl-button">
+                        <img src="assets/100nl-logo.png" alt="100% NL">
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
         <section class="programs-view">
             <div class="schedule-timeline">
                 <div class="live-time"></div>
@@ -118,13 +139,14 @@
 
                 </div>
             </div>
-            <!-- Begin Veronica programma's -->
-            <article class="single-program veronica" style="--row-start: 1; --row-span: 4;">
-                <div class="program-thumbnail">
-                    <img src="assets/programma's/veronica/oh-wat-een-nacht.avif" width="200">
-                </div>
+            <!-- Begin Veronica programs -->
+            <article class="single-program veronica"
+                style="--row-start: 1; --row-span: 4; --overlay-color: var(--veronica); --bg-image: url('../assets/programs/veronica/ekdom-in-de-morgen.avif');">
+                <!-- <div class="program-thumbnail">
+                    <img src="assets/programs/veronica/oh-wat-een-nacht.avif" width="200">
+                </div> -->
                 <div class="program-info">
-                    <h2 class="program-title">Oh wat een nacht</h2>
+                    <h3 class="program-title">Oh wat een nacht</h3>
                     <p class="program-time">
                         <time>00:00</time> - <time>04:00</time>
                     </p>
@@ -132,10 +154,10 @@
             </article>
             <article class="single-program veronica" style="--row-start: 7; --row-span: 4;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/veronica/ekdom-in-de-morgen.avif" width="200">
+                    <img src="assets/programs/veronica/ekdom-in-de-morgen.avif" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Ekdom in de morgen</h2>
+                    <h3 class="program-title">Ekdom in de morgen</h3>
                     <p class="program-time">
                         <time>06:00</time> - <time>10:00</time>
                     </p>
@@ -143,10 +165,10 @@
             </article>
             <article class="single-program veronica" style="--row-start: 11; --row-span: 2;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/veronica/goud-van-oud.avif" width="200">
+                    <img src="assets/programs/veronica/goud-van-oud.avif" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Goud van oud</h2>
+                    <h3 class="program-title">Goud van oud</h3>
                     <p class="program-time">
                         <time>10:00</time> - <time>12:00</time>
                     </p>
@@ -154,10 +176,10 @@
             </article>
             <article class="single-program veronica" style="--row-start: 15; --row-span: 2;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/veronica/de-bonanza.avif" width="200">
+                    <img src="assets/programs/veronica/de-bonanza.avif" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">De Bonanza</h2>
+                    <h3 class="program-title">De Bonanza</h3>
                     <p class="program-time">
                         <time>14:00</time> - <time>16:00</time>
                     </p>
@@ -165,10 +187,10 @@
             </article>
             <article class="single-program veronica" style="--row-start: 17; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/veronica/wout-frank.avif" width="200">
+                    <img src="assets/programs/veronica/wout-frank.avif" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Wout & Frank</h2>
+                    <h3 class="program-title">Wout & Frank</h3>
                     <p class="program-time">
                         <time>16:00</time> - <time>19:00</time>
                     </p>
@@ -176,10 +198,10 @@
             </article>
             <article class="single-program veronica" style="--row-start: 20; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/veronica/ferry-oomen.avif" width="200">
+                    <img src="assets/programs/veronica/ferry-oomen.avif" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Ferry Oomen</h2>
+                    <h3 class="program-title">Ferry Oomen</h3>
                     <p class="program-time">
                         <time>19:00</time> - <time>22:00</time>
                     </p>
@@ -187,24 +209,24 @@
             </article>
             <article class="single-program veronica" style="--row-start: 23; --row-span: 2;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/veronica/jannes-drop.avif" width="200">
+                    <img src="assets/programs/veronica/jannes-drop.avif" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Jannes Drop</h2>
+                    <h3 class="program-title">Jannes Drop</h3>
                     <p class="program-time">
                         <time>22:00</time> - <time>23:59</time>
                     </p>
                 </div>
             </article>
-            <!-- Einde Veronica programma's -->
+            <!-- Einde Veronica programs -->
 
-            <!-- Begin Slam programma's -->
+            <!-- Begin Slam programs -->
             <article class="single-program slam" style="--row-start: 1; --row-span: 6;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/slam/slam-nonstop.png.webp" width="200">
+                    <img src="assets/programs/slam/slam-nonstop.png.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">SLAM! Non-stop</h2>
+                    <h3 class="program-title">SLAM! Non-stop</h3>
                     <p class="program-time">
                         <time>00:00</time> - <time>06:00</time>
                     </p>
@@ -212,10 +234,10 @@
             </article>
             <article class="single-program slam" style="--row-start: 7; --row-span: 1;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/slam/florian-hamelink.webp" width="200">
+                    <img src="assets/programs/slam/florian-hamelink.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Florian Hamelink</h2>
+                    <h3 class="program-title">Florian Hamelink</h3>
                     <p class="program-time">
                         <time>06:00</time> - <time>07:00</time>
                     </p>
@@ -223,10 +245,10 @@
             </article>
             <article class="single-program slam" style="--row-start: 8; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/slam/ochtendshow.webp" width="200">
+                    <img src="assets/programs/slam/ochtendshow.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">DeSLAM! Ochtendshow</h2>
+                    <h3 class="program-title">DeSLAM! Ochtendshow</h3>
                     <p class="program-time">
                         <time>07:00</time> - <time>10:00</time>
                     </p>
@@ -234,10 +256,10 @@
             </article>
             <article class="single-program slam" style="--row-start: 11; --row-span: 2;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/slam/jarno-van-der-wielen.webp" width="200">
+                    <img src="assets/programs/slam/jarno-van-der-wielen.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Jarno van der Wielen</h2>
+                    <h3 class="program-title">Jarno van der Wielen</h3>
                     <p class="program-time">
                         <time>10:00</time> - <time>12:00</time>
                     </p>
@@ -245,10 +267,10 @@
             </article>
             <article class="single-program slam" style="--row-start: 13; --row-span: 2;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/slam/housuh-in-de-pauzuh.webp" width="200">
+                    <img src="assets/programs/slam/housuh-in-de-pauzuh.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">SLAM! Housuh in de pauzuh</h2>
+                    <h3 class="program-title">SLAM! Housuh in de pauzuh</h3>
                     <p class="program-time">
                         <time>12:00</time> - <time>14:00</time>
                     </p>
@@ -256,10 +278,10 @@
             </article>
             <article class="single-program slam" style="--row-start: 15; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/slam/thomas-van-empelen.webp" width="200">
+                    <img src="assets/programs/slam/thomas-van-empelen.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Thomas van Empelen</h2>
+                    <h3 class="program-title">Thomas van Empelen</h3>
                     <p class="program-time">
                         <time>14:00</time> - <time>17:00</time>
                     </p>
@@ -267,10 +289,10 @@
             </article>
             <article class="single-program slam" style="--row-start: 18; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/slam/middagshow.webp" width="200">
+                    <img src="assets/programs/slam/middagshow.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">SLAM! Middagshow</h2>
+                    <h3 class="program-title">SLAM! Middagshow</h3>
                     <p class="program-time">
                         <time>17:00</time> - <time>20:00</time>
                     </p>
@@ -278,24 +300,24 @@
             </article>
             <article class="single-program slam" style="--row-start: 21; --row-span: 4;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/slam/slam-nonstop.png.webp" width="200">
+                    <img src="assets/programs/slam/slam-nonstop.png.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">SLAM! Non-stop</h2>
+                    <h3 class="program-title">SLAM! Non-stop</h3>
                     <p class="program-time">
                         <time>20:00</time> - <time>23:59</time>
                     </p>
                 </div>
             </article>
-            <!-- Einde Slam programma's -->
+            <!-- Einde Slam programs -->
 
-            <!-- Begin 100%NL programma's -->
+            <!-- Begin 100%NL programs -->
             <article class="single-program honderdnl" style="--row-start: 1; --row-span: 6;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/100nl/honderdnl-nonstop.png.webp" width="200">
+                    <img src="assets/programs/100nl/honderdnl-nonstop.png.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">100%NL Non-stop</h2>
+                    <h3 class="program-title">100%NL Non-stop</h3>
                     <p class="program-time">
                         <time>00:00</time> - <time>06:00</time>
                     </p>
@@ -303,10 +325,10 @@
             </article>
             <article class="single-program honderdnl" style="--row-start: 7; --row-span: 4;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/100nl/giorgio-ingrid.webp" width="200">
+                    <img src="assets/programs/100nl/giorgio-ingrid.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Giorgio & Ingrid</h2>
+                    <h3 class="program-title">Giorgio & Ingrid</h3>
                     <p class="program-time">
                         <time>06:00</time> - <time>10:00</time>
                     </p>
@@ -314,10 +336,10 @@
             </article>
             <article class="single-program honderdnl" style="--row-start: 11; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/100nl/erik-van-roekel.webp" width="200">
+                    <img src="assets/programs/100nl/erik-van-roekel.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Erik van Roekel</h2>
+                    <h3 class="program-title">Erik van Roekel</h3>
                     <p class="program-time">
                         <time>10:00</time> - <time>13:00</time>
                     </p>
@@ -325,10 +347,10 @@
             </article>
             <article class="single-program honderdnl" style="--row-start: 14; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/100nl/colin-banks.webp" width="200">
+                    <img src="assets/programs/100nl/colin-banks.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Colin Banks</h2>
+                    <h3 class="program-title">Colin Banks</h3>
                     <p class="program-time">
                         <time>13:00</time> - <time>16:00</time>
                     </p>
@@ -336,10 +358,10 @@
             </article>
             <article class="single-program honderdnl" style="--row-start: 17; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/100nl/somertijd.webp" width="200">
+                    <img src="assets/programs/100nl/somertijd.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Somertijd</h2>
+                    <h3 class="program-title">Somertijd</h3>
                     <p class="program-time">
                         <time>16:00</time> - <time>19:00</time>
                     </p>
@@ -347,10 +369,10 @@
             </article>
             <article class="single-program honderdnl" style="--row-start: 20; --row-span: 3;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/100nl/koen-hansen.webp" width="200">
+                    <img src="assets/programs/100nl/koen-hansen.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">Koen Hansen</h2>
+                    <h3 class="program-title">Koen Hansen</h3>
                     <p class="program-time">
                         <time>19:00</time> - <time>22:00</time>
                     </p>
@@ -358,37 +380,18 @@
             </article>
             <article class="single-program honderdnl" style="--row-start: 23; --row-span: 2;">
                 <div class="program-thumbnail">
-                    <img src="assets/programma's/100nl/honderdnl-nonstop.png.webp" width="200">
+                    <img src="assets/programs/100nl/honderdnl-nonstop.png.webp" width="200">
                 </div>
                 <div class="program-info">
-                    <h2 class="program-title">100%NL Non-stop</h2>
+                    <h3 class="program-title">100%NL Non-stop</h3>
                     <p class="program-time">
                         <time>22:00</time> - <time>23:59</time>
                     </p>
                 </div>
             </article>
-            <!-- Einde 100%NL programma's -->
+            <!-- Einde 100%NL programs -->
         </section>
 
-        <section class="radio-selector">
-            <div class="radio-container">
-                <h2>Filter zender</h2>
-                <div class="radio-buttons">
-                    <button class="select-radio veronica-button">
-                        <img src="assets/veronica-logo.png" alt="Radio Veronica">
-                    </button>
-
-                    <button class="select-radio slam-button">
-                        <img src="assets/slam-logo.png" alt="SLAM!">
-                    </button>
-
-                    <button class="select-radio honderdnl-button">
-                        <img src="assets/100nl-logo.png" alt="100% NL">
-                    </button>
-                </div>
-            </div>
-
-        </section>
 
     </main>
 
