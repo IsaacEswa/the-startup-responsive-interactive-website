@@ -32,17 +32,18 @@
                                 d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
                         </svg></button>
 
-                    <ul>
-                        <li><a target="_blank" href="https://www.radioveronica.nl">Veronica</a></li>
-                        <li><a target="_blank" href="https://www.slam.nl">SLAM FM</a></li>
-                        <li><a target="_blank" href="https://www.100p.nl">100% NL</a></li>
+                    <ul class="sidebar-navigation">
+                        <li><a target="_blank" class="nav-veronica" href="https://www.radioveronica.nl">Veronica</a>
+                        </li>
+                        <li><a target="_blank" class="nav-slam" href="https://www.slam.nl">SLAM FM</a></li>
+                        <li><a target="_blank" class="nav-honderdnl" href="https://www.100p.nl">100% NL</a></li>
                     </ul>
                 </div>
                 <!-- Menu voor desktop -->
                 <ul class="navigation">
-                    <li><a target="_blank" href="https://www.radioveronica.nl">Veronica</a></li>
-                    <li><a target="_blank" href="https://www.slam.nl">SLAM FM</a></li>
-                    <li><a target="_blank" href="https://www.100p.nl">100% NL</a></li>
+                    <li><a target="_blank" class="nav-veronica" href="https://www.radioveronica.nl">Veronica</a></li>
+                    <li><a target="_blank" class="nav-slam" href="https://www.slam.nl">SLAM FM</a></li>
+                    <li><a target="_blank" class="nav-honderdnl" href="https://www.100p.nl">100% NL</a></li>
                 </ul>
 
                 <button id="hamburger-icon" onclick=showSidebar() title="Open menu"><svg height="30"
@@ -56,35 +57,48 @@
     </header>
 
     <main>
-        <section class="day-selector">
-            <div class="select-day active-day">
-                <p>Ma</p>
-                <p><strong>05</strong></p>
-            </div>
-            <div class="select-day">
-                <p>Di</p>
-                <p><strong>06</strong></p>
-            </div>
-            <div class="select-day">
-                <p>Wo</p>
-                <p><strong>07</strong></p>
-            </div>
-            <div class="select-day">
-                <p>Do</p>
-                <p><strong>08</strong></p>
-            </div>
-            <div class="select-day">
-                <p>Vr</p>
-                <p><strong>09</strong></p>
-            </div>
-            <div class="select-day">
-                <p>Za</p>
-                <p><strong>10</strong></p>
-            </div>
-            <div class="select-day">
-                <p>Zo</p>
-                <p><strong>11</strong></p>
-            </div>
+        <section class="day-selector" role="radiogroup" aria-label="Selecteer een dag">
+            <label class="select-day">
+                <input type="radio" name="dag" value="ma-05" checked>
+                <span>Ma</span>
+                <strong>05</strong>
+            </label>
+
+            <label class="select-day">
+                <input type="radio" name="dag" value="di-06">
+                <span>Di</span>
+                <strong>06</strong>
+            </label>
+
+            <label class="select-day">
+                <input type="radio" name="dag" value="wo-07">
+                <span>Wo</span>
+                <strong>07</strong>
+            </label>
+
+            <label class="select-day">
+                <input type="radio" name="dag" value="do-08">
+                <span>Do</span>
+                <strong>08</strong>
+            </label>
+
+            <label class="select-day">
+                <input type="radio" name="dag" value="vr-09">
+                <span>Vr</span>
+                <strong>09</strong>
+            </label>
+
+            <label class="select-day">
+                <input type="radio" name="dag" value="za-10">
+                <span>Za</span>
+                <strong>10</strong>
+            </label>
+
+            <label class="select-day">
+                <input type="radio" name="dag" value="zo-11">
+                <span>Zo</span>
+                <strong>11</strong>
+            </label>
         </section>
 
         <section class="radio-selector">

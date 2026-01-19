@@ -42,7 +42,7 @@ header {
     list-style: none;
     text-decoration: none;
     color: black;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .menu {
@@ -74,14 +74,18 @@ header {
 #hamburger-icon {
     cursor: pointer;
     line-height: 0;
+    background: none;
+    border: none;
+    fill: var(--primary-color);
 }
 
 .navigation {
     display: none;
 
-    a {
+    /* a {
         font-weight: 600;
-    }
+        transition: .3s;
+    } */
 
     @media (min-width: 768px) {
         display: flex;
@@ -99,13 +103,39 @@ header {
     }
 }
 
-.navigation a:hover,
+.navigation a,
+.sidebar-navigation a {
+    font-weight: 600;
+    transition: .3s;
+}
+
+.nav-veronica:hover,
+.nav-veronica:focus,
+.nav-veronica:active {
+    color: var(--veronica);
+
+}
+
+.nav-slam:hover,
+.nav-slam:focus,
+.nav-slam:active {
+    color: var(--slam);
+}
+
+.nav-honderdnl:hover,
+.nav-honderdnl:focus,
+.nav-honderdnl:active {
+    color: var(--honderdnl);
+}
+
+/* .navigation a:hover,
 .navigation a:focus {
     color: var(--primary-color);
-}
+} */
 
 .day-selector {
     justify-content: space-between;
+    align-items: center;
     display: flex;
     margin-bottom: 30px;
 }
@@ -114,7 +144,26 @@ header {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+
+    transition: .2s;
 }
+
+.select-day:hover,
+.select-day:has(input:checked),
+.active-day {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.select-day input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 .select-radio {
     background: none;
@@ -235,12 +284,14 @@ header {
     align-items: center;
     background-color: #FAFAFA;
 
+    color: var(--primary-color);
+
 }
 
 .schedule-hours time:not(:last-child)::after {
     content: "";
     flex-grow: 1;
-    border-right: 2px dashed var(--gray);
+    border-right: 2px dashed var(--primary-color);
 }
 
 .single-program {
@@ -265,7 +316,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 
-    /* overflow: hidden; */
+    overflow: hidden;
 
     animation: appear 5s linear;
     animation-timeline: view();
@@ -279,14 +330,11 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-
     background: linear-gradient(to bottom,
             color-mix(in srgb, var(--overlay-color) 50%, transparent),
             color-mix(in srgb, var(--overlay-color) 10%, black));
-
     z-index: 1;
     border-radius: 1em;
-
 }
 
 .single-program>* {
@@ -312,7 +360,7 @@ header {
 .live-time {
     width: 100%;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--primary-color);
     position: absolute;
     top: calc((var(--hours) + var(--minutes) / 60) / 24 * 100%);
     margin-top: 1em;
