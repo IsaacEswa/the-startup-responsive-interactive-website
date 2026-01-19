@@ -144,6 +144,7 @@ header {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     transition: .2s;
 }
@@ -158,12 +159,16 @@ header {
     cursor: pointer;
 }
 
+.select-day:has(input:focus) {
+    outline: 3px solid #8bb9e8;
+    outline-offset: 3px;
+}
+
 .select-day input {
     position: absolute;
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
-
 
 .select-radio {
     background: none;
