@@ -178,8 +178,8 @@ header {
 .program-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 0.5em;
+    /* justify-content: center; */
+    gap: 0.3em;
 }
 
 .program-time {
@@ -198,7 +198,7 @@ header {
 
 .programs-view {
     display: grid;
-    grid-template-columns: 4em 1fr 1fr 1fr;
+    grid-template-columns: 3em 1fr 1fr 1fr;
     /* grid-template-columns: 10% 30% 30% 30%; */
     grid-template-rows: repeat(24, 7em);
     /* 1 uur = 7em */
@@ -248,13 +248,13 @@ header {
     z-index: 0;
 
     color: var(--white);
-    padding: 1.5em;
+    padding: .5em .7em;
     border-radius: 1em;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
     display: flex;
-    gap: 1em;
-    align-items: center;
+    /* gap: 1em; */
+    align-items: end;
 
 
     grid-row: var(--row-start) / span var(--row-span);
@@ -269,7 +269,7 @@ header {
 
     animation: appear 5s linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 35%;
 
     transition: opacity .1s ease;
 }
@@ -282,7 +282,7 @@ header {
 
     background: linear-gradient(to bottom,
             color-mix(in srgb, var(--overlay-color) 50%, transparent),
-            color-mix(in srgb, var(--overlay-color) 90%, black));
+            color-mix(in srgb, var(--overlay-color) 10%, black));
 
     z-index: 1;
     border-radius: 1em;
