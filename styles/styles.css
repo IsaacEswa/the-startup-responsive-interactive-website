@@ -266,7 +266,12 @@ header {
     column-gap: .5em;
     margin-bottom: 200px;
 
-    /* overflow-x: visible; */
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    @media (min-width: 768px) {
+        overflow-x: hidden;
+    }
 
     @media (min-width: 1024px) {
         column-gap: 1em;
@@ -275,8 +280,8 @@ header {
 
 .schedule-timeline {
     grid-column: 1;
-    position: sticky;
-    left: 0;
+    /* position: sticky;
+    left: 0; */
     z-index: 10;
     grid-row: 1 / -1;
 }
