@@ -139,6 +139,10 @@ header {
     align-items: center;
     display: flex;
     margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+        padding-top: 2em
+    }
 }
 
 .day-selector .select-day {
@@ -221,6 +225,12 @@ header {
         color: white;
         padding-bottom: .5em;
     }
+
+    @media (min-width: 1024px) {
+        width: 33%;
+        right: .5em;
+        left: auto;
+    }
 }
 
 .radio-buttons {
@@ -264,7 +274,8 @@ header {
     grid-template-rows: repeat(24, 7em);
     /* 1 uur = 7em */
     column-gap: .5em;
-    margin-bottom: 200px;
+    padding-top: 2em;
+    margin-bottom: 150px;
 
     overflow-x: auto;
     overflow-y: hidden;
@@ -275,6 +286,9 @@ header {
 
     @media (min-width: 1024px) {
         column-gap: 1em;
+        padding-top: 5em;
+        margin-bottom: 0px;
+
     }
 }
 
@@ -343,7 +357,7 @@ header {
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
 
-    transition: opacity .1s ease;
+    transition: opacity .3s ease;
 
 
 
