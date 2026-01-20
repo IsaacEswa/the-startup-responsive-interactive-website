@@ -91,7 +91,7 @@ header {
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
-        gap: 2em;
+        gap: 3em;
         justify-content: space-between;
         list-style: none;
         align-items: center;
@@ -99,7 +99,7 @@ header {
         a {
             text-decoration: none;
             color: black;
-            font-size: 18px;
+            font-size: 20px;
         }
     }
 }
@@ -108,7 +108,21 @@ header {
 .sidebar-navigation a {
     font-weight: 600;
     transition: .3s;
+    /* text-decoration: underline; */
+
 }
+
+/* .nav-veronica {
+    text-decoration-color: var(--veronica);
+}
+
+.nav-slam {
+    text-decoration-color: var(--slam);
+}
+
+.nav-honderdnl {
+    text-decoration-color: var(--honderdnl);
+} */
 
 .nav-veronica:hover,
 .nav-veronica:focus,
