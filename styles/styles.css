@@ -278,7 +278,7 @@ header {
     display: inline-block;
     width: 1em;
     height: 1em;
-    background-image: url("/assets/clock-regular.svg");
+    background-image: url("../assets/clock-regular.svg");
 }
 
 .programs-view {
