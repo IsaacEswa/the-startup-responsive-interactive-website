@@ -57,7 +57,11 @@
     </header>
 
     <main>
-        <section class="day-selector" role="radiogroup" aria-label="Selecteer een dag">
+
+        <section class="day-selector" role="radiogroup" aria-labelledby="day-selector-label">
+            <h2 id="day-selector-label" class="visually-hidden">
+                Selecteer een dag
+            </h2>
             <label class="select-day">
                 <input type="radio" name="dag" value="ma-05" checked>
                 <span>Ma</span>
