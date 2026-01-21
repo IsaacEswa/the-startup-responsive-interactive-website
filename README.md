@@ -2,10 +2,11 @@ Ontwerp en maak een responsive website voor een startup.
 
 De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
 
-# Titel
+# RadioGuide | MediaHuis
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Beschrijving
+Mediahuis wil in samenwerking met Triple een website realiseren waarmee luisteraars hun favoriete radioprogramma’s kunnen volgen. De website biedt een duidelijk overzicht van programmatijdlijnen, zodat gebruikers eenvoudig kunnen vergelijken wie op welk moment presenteert en altijd up-to-date zijn over de programmering.
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
