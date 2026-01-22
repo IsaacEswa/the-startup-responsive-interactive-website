@@ -216,6 +216,11 @@ header {
     scale: .95;
 }
 
+.select-radio:focus {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
 .hide-programs {
     opacity: 0 !important;
 
