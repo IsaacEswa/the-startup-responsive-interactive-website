@@ -482,9 +482,17 @@ header {
     margin-bottom: 80px;
 
     img {
+        height: 350px;
         width: 100%;
         height: auto;
         border-radius: 10px;
+    }
+
+    @media (min-width: 768px) {
+        img {
+            height: 550px;
+            object-fit: cover;
+        }
     }
 
 
