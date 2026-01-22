@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioGuide</title>
+
+    <link rel="stylesheet" href="styles/styleguide.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- logo's -->
+        <div class="header-leftside">
+            <!-- <a href="./index.html">
+                <img class="logo-primair" src="assets/radioguide-logo-colored.svg" alt="RadioGuide">
+            </a> -->
+            <h1><a href="./index.html">RadioGuide</a></h1>
+        </div>
+        <div class="header-rightside">
+            <nav class="menu">
+
+                <!-- Menu voor mobiel -->
+                <div class="sidebar" id="sidebar" aria-hidden="true" tabindex="-1">
+                    <button id="close-icon" onclick=hideSidebar() title="Sluit menu"><svg height="30"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
+                        </svg></button>
+
+                    <ul class="sidebar-navigation">
+                        <li><a target="_blank" class="nav-veronica" href="https://www.radioveronica.nl">Veronica</a>
+                        </li>
+                        <li><a target="_blank" class="nav-slam" href="https://www.slam.nl">SLAM FM</a></li>
+                        <li><a target="_blank" class="nav-honderdnl" href="https://www.100p.nl">100% NL</a></li>
+                    </ul>
+                </div>
+                <!-- Menu voor desktop -->
+                <ul class="navigation">
+                    <li><a target="_blank" class="nav-veronica" href="https://www.radioveronica.nl">Veronica</a></li>
+                    <li><a target="_blank" class="nav-slam" href="https://www.slam.nl">SLAM FM</a></li>
+                    <li><a target="_blank" class="nav-honderdnl" href="https://www.100p.nl">100% NL</a></li>
+                </ul>
+
+                <button id="hamburger-icon" onclick=showSidebar() title="Open menu"><svg height="30"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                    </svg></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <a href="index.html" class="back-link"><svg height="30" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path
+                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg> Terug naar overzicht</a>
+
+        </section>
+        <section class="program-hero">
+            <img src="/assets/programs/veronica/oh-wat-een-nacht.avif" alt="Afbeelding van programma: Oh Wat Een Nacht">
+            <h1>Oh Wat Een Nacht</h1>
+            <p class="program-time">
+                <time datetime="00:00">00:00</time> - <time datetime="04:00">04:00</time>
+            </p>
+        </section>
+
+        <section class="featured-programs">
+            <h2>Andere programma's</h2>
+            <div class="featured-programs-container"></div>
+            <article>
+                <img src="assets/programs/veronica/de-bonanza.avif" alt="Programma De Bonanza">
+                <h3>De Bonanza</h3>
+            </article>
+            <article>
+                <img src="assets/programs/veronica/ekdom-in-de-morgen.avif" alt="Programma Ekdom in de Morgen">
+                <h3>Ekdom in de Morgen</h3>
+            </article>
+            <article>
+                <img src="assets/programs/veronica/ferry-oomen.avif" alt="Programma Ferry Oomen">
+                <h3>Ferry Oomen</h3>
+            </article>
+            <article>
+                <img src="assets/programs/veronica/goud-van-oud.avif" alt="Programma Goud Van Oud">
+                <h3>Goud Van Oud</h3>
+            </article>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
