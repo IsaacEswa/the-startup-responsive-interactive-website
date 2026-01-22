@@ -31,7 +31,16 @@ Bekijk hier de live website: https://isaaceswa.github.io/the-startup-responsive-
 Ik heb gebruik gemaakt van HTML, CSS en JS om deze website te maken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 ### HTML
-Ik begon eerst met body, header, main en sections. 
+Ik begon eerst met body, header, main en sections. Ik heb zo weinig mogelijk gebruik gemaakt van divjes. Bovenaan de pagina heb ik de H1 (logo), vervolgens H2 en daaronder H3. In de articles heb ik gebruik gemaakt van aria-labels en tab-index om de artikelen tabbaar te maken.
+
+### CSS
+Ik heb gebruik gemaakt van variabelen zoals: --row-start, --row-span, --overlay-color en --bg-image om de website dynamischer te maken.
+https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee3f17640a754774106e93b44bcfb3267719cad/index.html#L163-L176
+
+
+Ik heb de media-queries **min-width: 768px** en **min-width: 1024px** gebruikt.
+Ik heb zoveel mogelijk CSS genest om mijn code schoon te houden, ook heb ik alle classes in het engels gedaan.
+https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee3f17640a754774106e93b44bcfb3267719cad/styles/styles.css#L177-L194
 
 ## Bronnen
 
