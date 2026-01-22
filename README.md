@@ -11,6 +11,17 @@ Mediahuis wil in samenwerking met Triple een website realiseren waarmee luistera
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
+## Features
+- Overizcht van de programma's van Veronica, SLAMFM en 100%NL
+- Radiozenders filteren
+- Detailpagina van een programma
+- Tijdsindicatie die live meeloopt
+- Dag in week selecteren
+
+## Preview
+### Mobiele versie
+
+
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
