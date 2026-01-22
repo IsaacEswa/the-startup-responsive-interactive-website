@@ -37,10 +37,19 @@ Ik begon eerst met body, header, main en sections. Ik heb zo weinig mogelijk geb
 Ik heb gebruik gemaakt van variabelen zoals: --row-start, --row-span, --overlay-color en --bg-image om de website dynamischer te maken.
 https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee3f17640a754774106e93b44bcfb3267719cad/index.html#L163-L176
 
-
 Ik heb de media-queries **min-width: 768px** en **min-width: 1024px** gebruikt.
 Ik heb zoveel mogelijk CSS genest om mijn code schoon te houden, ook heb ik alle classes in het engels gedaan.
 https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee3f17640a754774106e93b44bcfb3267719cad/styles/styles.css#L177-L194
+
+User Interaction classes:
+https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee3f17640a754774106e93b44bcfb3267719cad/styles/styles.css#L237-L245
+
+Op de programma detail pagina heb ik ook gebruikt gemaakt van Grid. Op mobiel laat deze 2 artikelen naast elkaar zien en bij een groter scherm 4 naast elkaar.
+https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee3f17640a754774106e93b44bcfb3267719cad/styles/styles.css#L513-L521
+
+### JavaScript
+Voor de interactie heb ik het 3 stappenplan gevolgd:
+https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/4f98346eed854cadb256d90d2544a1bc22b3e364/scripts/scripts.js#L24-L39
 
 ## Bronnen
 
