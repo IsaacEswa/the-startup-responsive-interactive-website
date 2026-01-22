@@ -51,6 +51,11 @@ https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee
 Voor de interactie heb ik het 3 stappenplan gevolgd:
 https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/4f98346eed854cadb256d90d2544a1bc22b3e364/scripts/scripts.js#L24-L39
 
+## Toegankelijkheid
+Ik heb een een [WCAG audit](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/13) en Color contrast testen ([normal-sized text](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/14), [large-sized text](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/15), [icons](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/16)) gedaan. 
+
+De uitslagen waren erg positief. Om de website nog toegankelijker te maken heb ik aan elk artikel een tab-index toegevoegd en correcte aria-labels
+
 ## Bronnen
 
 ## Licentie
