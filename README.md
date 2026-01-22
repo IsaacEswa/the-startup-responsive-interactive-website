@@ -63,6 +63,8 @@ https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/4f9
 ## Toegankelijkheid
 Ik heb een een [WCAG audit](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/13) en Color contrast testen ([normal-sized text](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/14), [large-sized text](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/15), [icons](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/16)) gedaan. 
 
+Daarnaast heb ik ook een [HTML Validator test](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/17) gedaan.
+
 De uitslagen waren erg positief. Om de website nog toegankelijker te maken heb ik aan elk artikel een tab-index toegevoegd en correcte aria-labels. 
 <br>
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/911d700a-b1b5-4ca9-9213-0b1819dcac88" />
