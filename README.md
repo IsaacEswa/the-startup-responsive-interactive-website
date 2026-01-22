@@ -18,6 +18,10 @@ Mediahuis wil in samenwerking met Triple een website realiseren waarmee luistera
 - Tijdsindicatie die live meeloopt
 - Dag in week selecteren
 
+## Preview
+### Mobiele versie
+
+
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
