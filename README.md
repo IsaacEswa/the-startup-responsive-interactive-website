@@ -20,10 +20,18 @@ Mediahuis wil in samenwerking met Triple een website realiseren waarmee luistera
 
 ## Preview
 ### Mobiele versie
+https://github.com/user-attachments/assets/a8f95cc8-4207-46c2-a9f3-bdb54b54dd69
 
+### Desktop versie
+https://github.com/user-attachments/assets/3d39bf7a-3f25-44cc-8332-20877ccd6ca4
+
+Bekijk hier de live website: https://isaaceswa.github.io/the-startup-responsive-interactive-website
 
 ## Kenmerken
+Ik heb gebruik gemaakt van HTML, CSS en JS om deze website te maken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+### HTML
+Ik begon eerst met body, header, main en sections. 
 
 ## Bronnen
 
