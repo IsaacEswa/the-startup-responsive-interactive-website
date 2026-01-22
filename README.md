@@ -27,6 +27,12 @@ https://github.com/user-attachments/assets/3d39bf7a-3f25-44cc-8332-20877ccd6ca4
 
 Bekijk hier de live website: https://isaaceswa.github.io/the-startup-responsive-interactive-website
 
+## Vormgeving keuzes
+<img width="408" height="230" alt="image" src="https://github.com/user-attachments/assets/c41020de-bcf9-41fa-be25-d7e691655f00" />
+
+Ik heb besloten om de afbeelding als achtergrond te doen, omdat de afbeelding anders te klein was en de content ruimte niet goed benut werd. Door een gradient overlay toe te voegen is de afbeelding nog goed zichtbaar en de tekst goed leesbaar. Door een overlay toe te voegen met de juiste huisstijl kleur, wordt er goed onderscheid gemaakt bij welke zender desbetreffende programma hoort. De content staat onderin het artikelen omdat het onderste gedeelte van de afbeelding minder belangrijk is dan het bovenste gedeelde.
+
+
 ## Kenmerken
 Ik heb gebruik gemaakt van HTML, CSS en JS om deze website te maken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
@@ -47,6 +53,9 @@ https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee
 Op de programma detail pagina heb ik ook gebruikt gemaakt van Grid. Op mobiel laat deze 2 artikelen naast elkaar zien en bij een groter scherm 4 naast elkaar.
 https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/9ee3f17640a754774106e93b44bcfb3267719cad/styles/styles.css#L513-L521
 
+Voor de font-sizes heb ik gebruik gemaakt van clamp, deze keuze heb ik gemaakt zodat de font-sizes soepel meeschalen met het scherm
+https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/5217b419d1abb1c4f062b7b63d3f21a0d5add192/styles/styleguide.css#L28-L57
+
 ### JavaScript
 Voor de interactie heb ik het 3 stappenplan gevolgd:
 https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/4f98346eed854cadb256d90d2544a1bc22b3e364/scripts/scripts.js#L24-L39
@@ -54,7 +63,10 @@ https://github.com/IsaacEswa/the-startup-responsive-interactive-website/blob/4f9
 ## Toegankelijkheid
 Ik heb een een [WCAG audit](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/13) en Color contrast testen ([normal-sized text](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/14), [large-sized text](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/15), [icons](https://github.com/IsaacEswa/the-startup-responsive-interactive-website/issues/16)) gedaan. 
 
-De uitslagen waren erg positief. Om de website nog toegankelijker te maken heb ik aan elk artikel een tab-index toegevoegd en correcte aria-labels
+De uitslagen waren erg positief. Om de website nog toegankelijker te maken heb ik aan elk artikel een tab-index toegevoegd en correcte aria-labels. 
+<br>
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/911d700a-b1b5-4ca9-9213-0b1819dcac88" />
+
 
 ## Bronnen
 
