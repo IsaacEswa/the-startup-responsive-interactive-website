@@ -400,7 +400,21 @@ header {
     z-index: 2;
 }
 
-.program-link {}
+.program-link {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+
+    transition: .2s;
+}
+
+.program-link:hover {
+    opacity: .7;
+
+}
 
 .single-program.veronica {
     grid-column: 2;
@@ -447,16 +461,20 @@ header {
         text-decoration: none;
         color: rgb(103, 103, 103);
     }
+
+    @media (min-width: 768px) {
+        padding-top: 1.5em
+    }
 }
 
 .back-link:hover,
 .back-link:focus {
     svg {
-        fill: black;
+        fill: rgb(43, 43, 43);
     }
 
     a {
-        color: black;
+        color: rgb(43, 43, 43);
     }
 }
 
@@ -468,9 +486,21 @@ header {
         height: auto;
         border-radius: 10px;
     }
+
+
 }
 
 .featured-programs {
+
+    h2 {
+        padding-bottom: .5em;
+        color: rgb(43, 43, 43);
+
+    }
+
+    h3 {
+        color: rgb(43, 43, 43);
+    }
 
     img {
         width: 100%;

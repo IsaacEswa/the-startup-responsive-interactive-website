@@ -35,7 +35,7 @@ h1 a {
 }
 
 h2 {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
     /* 20 → 28 */
     white-space: nowrap;
 }
