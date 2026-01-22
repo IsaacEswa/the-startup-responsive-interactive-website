@@ -58,9 +58,6 @@ strong {
 
 header,
 main {
-    /* margin-left: 1em;
-    margin-right: 1em; */
-
     padding: var(--paddingsidesMobile);
     margin-top: 10px;
 
