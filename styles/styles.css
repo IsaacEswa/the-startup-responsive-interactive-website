@@ -473,7 +473,7 @@ header {
 }
 
 .back-link:hover,
-.back-link:focus {
+.back-link:active {
     svg {
         fill: rgb(43, 43, 43);
     }
@@ -481,6 +481,11 @@ header {
     a {
         color: rgb(43, 43, 43);
     }
+}
+
+.back-link:focus {
+    color: rgb(43, 43, 43);
+
 }
 
 .program-hero {
