@@ -34,7 +34,7 @@ Ik heb besloten om de afbeelding als achtergrond te doen, omdat de afbeelding an
 
 
 ## Kenmerken
-Ik heb gebruik gemaakt van HTML, CSS en JS om deze website te maken
+Ik heb gebruik gemaakt van HTML, CSS en JS om deze website te maken. Ik begon mobile-first ontwerpen en ontwikkelen.
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 ### HTML
 Ik begon eerst met body, header, main en sections. Ik heb zo weinig mogelijk gebruik gemaakt van divjes. Bovenaan de pagina heb ik de H1 (logo), vervolgens H2 en daaronder H3. In de articles heb ik gebruik gemaakt van aria-labels en tab-index om de artikelen tabbaar te maken.
